@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <arpa/inet.h>
 
+int detect_weed(void *data);
 
 int main(void) {
 	int listenfd = 0, connfd = 0;
@@ -69,7 +70,10 @@ int main(void) {
 		printf("client IP address : %s\n", ipAddr);
 		
 		//get client's ip address and port number
-	
+		
+		detect_weed(read_buff);
+
+
 		close(connfd);
 		close(conn_datafd);
 		usleep(500);
