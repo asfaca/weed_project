@@ -10,24 +10,24 @@ using namespace cv;
 using namespace std;
 int main(int argc, char** argv)
 {
-	String imageName = "newimg.png";
+	String imageName = "Lenna.png";
 	String grayImageName = "gray.bmp";
 
 	Mat image;
-	image = imread(imageName, IMREAD_COLOR); 
+	image = imread(imageName, IMREAD_COLOR);
 
-	uchar *pixel = (uchar*)image.data;
-
-	
-	cout << image.cols << " and " << image.rows;
 
 	for (int i = 0; i < image.rows; i++) {
-		for (int k = 0; k < image.cols; k++) {
-			//out << (int)pixel[i + k] << endl;
-			//cout << (int)pixel[i + k]/2 << endl;
+		for (int k = 0; k < image.cols * 3; k++) {
+			image.at<uchar>(i, k) /= 3;
+			//cout << (int)image.at<uchar>(i, k) << ", ";
 		}
+		//cout << endl;
 	}
-
+	
+	namedWindow("Display window", WINDOW_AUTOSIZE); // Create a window for display.
+	imshow("Display window", image);
+	
 
 	waitKey(0);
 
