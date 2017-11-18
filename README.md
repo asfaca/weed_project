@@ -2,7 +2,7 @@
 you must link opencv library to main.cpp when compiling.
 
 ## how it works
-![Alt text](/leaf_image/leaf3.jpg)
+<img width="50%" height="50%">![Alt text](/leaf_image/leaf3.jpg)</img>
 
 
 
