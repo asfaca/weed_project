@@ -1,7 +1,7 @@
 # Weed detect project
 you must link opencv library to main.cpp when compiling.
 
-## how it works
+## Image preprocessing
 ![Alt text](/leaf_image/leaf3.jpg)
 ### to
 ![Alt text](/leaf_image/result1.png)
