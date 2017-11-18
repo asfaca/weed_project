@@ -4,7 +4,7 @@ you must link opencv library to main.cpp when compiling.
 ## how it works
 
 
-<img src="https://github.com/asfaca/weed_project/leaf_image/leaf3.jpg">
+<img src="/leaf_image/leaf3.jpg">
 
 
 ![Alt text](/leaf_image/leaf7.jpg)
